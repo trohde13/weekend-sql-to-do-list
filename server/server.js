@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('server/public'));
 
 //ROUTES
-const listRouter = require('./.routes/list.router');
+const listRouter = require('./routes/list.router');
 app.use('/listdata', listRouter);
 
 
