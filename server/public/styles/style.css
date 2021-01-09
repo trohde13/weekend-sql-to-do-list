@@ -1,0 +1,81 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("oldpaper2.jpg");
+    background-image: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pageHeader {
+    padding: 30px;
+    margin: 10px;
+    background: #ccffff;
+    background-image: url("pencils1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 0 4px 6px #291528;
+}
+
+.pageHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    text-shadow: 2px 2px 7px #291528;
+    color: #ffffff;
+}
+
+#inputDiv {
+    padding: 20px;
+    margin: 20px;
+    align-content: center;
+    
+}
+
+#priorityIn {
+    
+}
+
+.sectionHeader {
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background: #ffffff;
+    background-image: url("notebook-spiral.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 6px #291528;
+}
+
+.sectionHeader {
+    text-align: center;
+    font-size: x-large;
+}
+
+#listWrapper {
+    text-align: center;
+    float: inherit;
+}
+
+.pageFooter {
+    width: 100%;
+    background: #ccffff;
+    background-image: url("pencils1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    overflow: hidden;
+}
+
+.pageFooter {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    text-shadow: 2px 2px 7px #291528;
+    color: #ffffff;
+}
