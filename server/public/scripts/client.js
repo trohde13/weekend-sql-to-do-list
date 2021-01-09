@@ -49,6 +49,9 @@ function postListItems() {
         $('#priorityIn').val(''),
         $('#noteIn').val('')
         getListItems();
+    }).catch(function(error){
+        console.log('error in POST');
+        alert('unable to add note');
     })
 
 }; //end postListItems
