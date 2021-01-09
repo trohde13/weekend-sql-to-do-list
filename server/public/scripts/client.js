@@ -8,6 +8,7 @@ function handleReady() {
     getListItems();
     //click listeners
     $('#addNote').on('click', postListItems);
+    $('#listBody').on('click', '.deleteBtn', deleteItem);
 
 }; //end handleReady
 
@@ -59,12 +60,12 @@ function postListItems() {
 function deleteItem() {
     console.log('deleted item');
     //ajax DELETE
-    const id = $(this).closest('tr').data('id')
+    const id = $(this).closest('tr').data('id');
     console.log(id);
 
     $.ajax({
         type: 'DELETE',
-        url: `/notes/${id}`
+        url: `/listdata/${id}`
     }).then(function(response){
         getListItems();
     }).catch(function(error){
