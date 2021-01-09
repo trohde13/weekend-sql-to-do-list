@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="vendors/jquery-3.5.1.js"></script>
+    <script src="scripts/client.js"></script>
+    <title>ToDo</title>
+</head>
+<body>
+    <header class="pageHeader">
+        <h1>BlankPage</h1>
+        <h3>A Better To Do List</h3>
+    </header>
+    <div id="inputDiv">
+        <form>
+            <select id="priorityIn">
+                <option>high</option>
+                <option>low</option>
+            </select>
+            <input type="text" id="noteIn" placeholder="add to do item" />
+            <button type="submit" id="addNote"></button>
+        </form>
+    </div>
+    <div id="outputDiv">
+        <h2>Things To Do!</h2>
+        <table id="listWrapper">
+            <thead>
+                <tr>
+                    <th>Completed</th>
+                    <th>Priority</th>
+                    <th>List Item</th>
+                    <tr>Delete Item</tr>
+                </tr>
+            </thead>
+            <tbody id="listBody"></tbody>
+        </table>
+    </div>
+    <footer class="pageFooter">
+        <p>BlankPage</p>
+        <p>A Better To Do List</p>
+        <p>copyright 2021</p>
+    </footer>
+</body>
+</html>
