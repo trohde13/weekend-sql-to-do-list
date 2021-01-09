@@ -23,7 +23,7 @@ function getListItems() {
         for(let i = 0; i < response.length; i++) {
             $('#listBody').append(`
             <tr data-id=${response[i].id}>
-                <td><button class="checkBtn">✅</td>
+                <td><button class="checkBtn">✔️☑️</td>
                 <td>${response[i].priority}</td>
                 <td>${response[i].note}</td>
                 <td><button class="deleteBtn">DELETE</td>
@@ -59,7 +59,17 @@ function postListItems() {
 function deleteItem() {
     console.log('deleted item');
     //ajax DELETE
+    const id = $(this).closest('tr').data('id')
+    console.log(id);
 
+    $.ajax({
+        type: 'DELETE',
+        url: `/notes/${id}`
+    }).then(function(response){
+        getListItems();
+    }).catch(function(error){
+        alert('error deleting this note');
+    })
 }; //end delete
 
 function completeItem() {
