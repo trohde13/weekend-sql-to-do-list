@@ -38,7 +38,7 @@ function getListItems() {
             $tr.append(`<td><button class="deleteBtn">DELETE</td>`);
 
 
-            $("#listWrapper").append($tr);
+            $("#listBody").append($tr);
             // $('#listBody').append(`
             // <tr data-id=${response[i].id}>
             //     <td><button class="checkBtn">✔️</td>

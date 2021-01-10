@@ -48,30 +48,10 @@
 - [x] footer for "brand consistency" of page
 - [ ] table formating (bootstrap)
     -[ ] consider how I want this to appear on page
-- [ ] text-strikethrough/ colorchange on completed click
+- [x] text-strikethrough/ colorchange on completed click
 
 ## SERVER (server.js/ router.js/ pool.js)
 - [x] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
 - [x] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
 - [x] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
 - [x] Create PUT ROUTE/ ajax for inserting data to SQL database
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
