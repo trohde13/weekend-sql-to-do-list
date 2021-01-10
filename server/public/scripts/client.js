@@ -10,7 +10,7 @@ function handleReady() {
     $('#addNote').on('click', postListItems);
     $('#listBody').on('click', '.deleteBtn', deleteItem);
     $('#listBody').on('click', '.checkBtn', completeItem);
-
+ 
 }; //end handleReady
 
 function getListItems() {
@@ -23,16 +23,34 @@ function getListItems() {
     }).then(function(response) {
         //append to DOM
         for(let i = 0; i < response.length; i++) {
-            $('#listBody').append(`
-            <tr data-id=${response[i].id}>
-                <td><button class="checkBtn">✔️</td>
-                <td>${response[i].completed}</td>
-                <td class="row">${response[i].priority}</td>
-                <td class="row">${response[i].note}</td>
-                <td><button class="deleteBtn">DELETE</td>
-            </tr>
-            `)
+            let notes = response[i];
+            let $tr = $(`<tr></tr>`);
+
+            if(notes.completed === '✓') {
+                $tr = $(`<tr class="completedRow"></tr>`);
+            }
+
+            $tr.data("notetask", notes);
+            $tr.append(`<td><td><button class="checkBtn">✔️</td></td>`);
+            $tr.append(`<td>${notes.completed}</td>`);
+            $tr.append(`<td>${notes.priority}</td>`);
+            $tr.append(`<td>${notes.note}</td>`);
+            $tr.append(`<td><button class="deleteBtn">DELETE</td>`);
+
+
+            $("#listWrapper").append($tr);
+            // $('#listBody').append(`
+            // <tr data-id=${response[i].id}>
+            //     <td><button class="checkBtn">✔️</td>
+            //     <td>${response[i].completed}</td>
+            //     <td class="row">${response[i].priority}</td>
+            //     <td class="row">${response[i].note}</td>
+            //     <td><button class="deleteBtn">DELETE</td>
+            // </tr>
+            // `)
         }
+
+        
     })
 
 }; //end getListItems
@@ -62,12 +80,12 @@ function postListItems() {
 function deleteItem() {
     console.log('deleted item');
     //ajax DELETE
-    const id = $(this).closest('tr').data('id');
-    console.log(id);
+    const notetask = $(this).closest('tr').data('notetask');
+    console.log(notetask);
 
     $.ajax({
         type: 'DELETE',
-        url: `/listdata/${id}`
+        url: `/listdata/${notetask.id}`
     }).then(function(response){
         getListItems();
     }).catch(function(error){
@@ -79,18 +97,19 @@ function completeItem() {
     console.log('completed list item');
     
     //ajax PUT
-    const id = $(this).closest('tr').data('id');
-    console.log(id);
+    const notetask = $(this).closest('tr').data('notetask');
+    console.log(notetask);
     const dataToSend = {
         completed: true
     }
 
     $.ajax({
         type: 'PUT',
-        url: `/listdata/${id}`,
+        url: `/listdata/${notetask.id}`,
         data: dataToSend
     }).then(function(response) {
         console.log('task completed');
+        
         getListItems();
         
     }).catch(function(error) {
@@ -100,11 +119,13 @@ function completeItem() {
     
 }; //end completeItem
 
-function markCompleted() {
-    console.log('marked as completed');
+// function markCompleted() {
+//     console.log('marked as completed');
 
-    $(this).closest('tr').removeClass('row');
-    $(this).closest('tr').addClass('completedRow');
+//     $(this).closest('tr').removeClass('row');
+//     $(this).closest('tr').addClass('completedRow');
+
     
-}
+    
+// }; //end markCompleted
 

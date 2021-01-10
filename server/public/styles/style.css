@@ -121,11 +121,13 @@ tr {
 
 .row {
     color: black;
+    
 }
 
 .completedRow {
+    color: black;
     text-decoration: line-through;
-    color: rgb(218, 216, 216);
+    
 }
 
 .pageFooter {

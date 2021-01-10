@@ -1,6 +1,6 @@
 CREATE TABLE "notes" (
 	"id" SERIAL PRIMARY KEY,
-	"completed" VARCHAR(1) DEFAULT 'N',
+	"completed" VARCHAR(1) DEFAULT '❍',
 	"priority" VARCHAR(4) NOT NULL,
 	"note" VARCHAR(140) NOT NULL
 );
