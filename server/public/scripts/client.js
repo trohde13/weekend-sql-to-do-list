@@ -9,7 +9,7 @@ function handleReady() {
     //click listeners
     $('#addNote').on('click', postListItems);
     $('#listBody').on('click', '.deleteBtn', deleteItem);
-    $('#listBody').on('click', 'checkBtn', completeItem);
+    $('#listBody').on('click', '.checkBtn', completeItem);
 
 }; //end handleReady
 
@@ -27,8 +27,8 @@ function getListItems() {
             <tr data-id=${response[i].id}>
                 <td><button class="checkBtn">✔️</td>
                 <td>${response[i].completed}</td>
-                <td>${response[i].priority}</td>
-                <td>${response[i].note}</td>
+                <td class="row">${response[i].priority}</td>
+                <td class="row">${response[i].note}</td>
                 <td><button class="deleteBtn">DELETE</td>
             </tr>
             `)
@@ -77,6 +77,7 @@ function deleteItem() {
 
 function completeItem() {
     console.log('completed list item');
+    
     //ajax PUT
     const id = $(this).closest('tr').data('id');
     console.log(id);
@@ -91,9 +92,19 @@ function completeItem() {
     }).then(function(response) {
         console.log('task completed');
         getListItems();
+        
     }).catch(function(error) {
         alert('error updating')
     })
-
+    
+    
 }; //end completeItem
+
+function markCompleted() {
+    console.log('marked as completed');
+
+    $(this).closest('tr').removeClass('row');
+    $(this).closest('tr').addClass('completedRow');
+    
+}
 

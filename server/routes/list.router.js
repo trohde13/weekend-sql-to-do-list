@@ -39,11 +39,11 @@ router.put('/:id', (req, res) => {
     let notes = req.body;
     let id = req.params.id;
 
-    console.log(`Updating TO DO notes ${id} with`, notes.completed);
+    console.log(`Updating TO DO note ${id} with`, notes.completed);
 
     let queryText;
 
-    if (notes.completed === 'yes') {
+    if (notes.completed === 'true') {
         queryText = `
             UPDATE "notes"
             SET "completed" = '✓'

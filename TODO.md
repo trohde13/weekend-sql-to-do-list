@@ -37,7 +37,7 @@
 - [x] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
 - [x] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
 - [x] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
-- [ ] Create PUT ROUTE/ ajax for changing row data when task is completed
+- [x] Create PUT ROUTE/ ajax for changing row data when task is completed
 
 ## STYLING (style.css)
 - [x] theme of page (paper/ notebook or do I want to explore something different)
@@ -48,12 +48,13 @@
 - [x] footer for "brand consistency" of page
 - [ ] table formating (bootstrap)
     -[ ] consider how I want this to appear on page
+- [ ] text-strikethrough/ colorchange on completed click
 
 ## SERVER (server.js/ router.js/ pool.js)
 - [x] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
 - [x] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
 - [x] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
-- [ ] Create PUT ROUTE/ ajax for inserting data to SQL database
+- [x] Create PUT ROUTE/ ajax for inserting data to SQL database
 - [ ]
 - [ ]
 - [ ]

@@ -119,6 +119,15 @@ tr {
     line-height: 2em;
 }
 
+.row {
+    color: black;
+}
+
+.completedRow {
+    text-decoration: line-through;
+    color: rgb(218, 216, 216);
+}
+
 .pageFooter {
     width: 100%;
     background: #ccffff;
