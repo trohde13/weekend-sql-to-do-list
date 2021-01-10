@@ -1,58 +1,58 @@
 ## STARTING OFF
-- [ ] Sketch out rough ideas offline
-- [ ] Create Server Folder
-    - [ ] server.js
-    - [ ] modules folder/ pool.js
-    - [ ] .gitignore
-    - [ ] Public Folder
-        - [ ] index.html
-        - [ ] scripts folder/ client.js
-        - [ ] styles folder/ style.css
-        - [ ] vendors folder
-        - [ ] add jQuery
+- [x] Sketch out rough ideas offline
+- [x] Create Server Folder
+    - [x] server.js
+    - [x] modules folder/ pool.js
+    - [x] .gitignore
+    - [x] Public Folder
+        - [x] index.html
+        - [x] scripts folder/ client.js
+        - [x] styles folder/ style.css
+        - [x] vendors folder
+        - [x] add jQuery
         - [ ] add bootstrap
-        - [ ] routes folder/ router.js file
-        - [ ] npm install / npm install express / npm install pg
+        - [x] routes folder/ router.js file
+        - [x] npm install / npm install express / npm install pg
 
 ## DATABASE
-    - [ ] Create SQL database weekend-to-do-app
-    - [ ] Create To Do List Table (Named: ______ )
-    - [ ] Determine Rows/ Headers for Table
+    - [x] Create SQL database weekend-to-do-app
+    - [x] Create To Do List Table (Named: ______ )
+    - [x] Determine Rows/ Headers for Table
         - id (serial primary key), completed (y/n), priority (high/low), note (varchar 140), delete
 
 ## CLIENT (index.html/ client.js)
-- [ ] Create base page layout
-    - [ ] header
-    - [ ] form
-        - [ ] input for note
-        - [ ] dropdown for priority level?
-        - [ ] add note/ submit button
-    - [ ] table to append to (rows for priority level, note, delete button, completed button/check box)
-    - [ ] footer?
+- [x] Create base page layout
+    - [x] header
+    - [x] form
+        - [x] input for note
+        - [x] dropdown for priority level?
+        - [x] add note/ submit button
+    - [x] table to append to (rows for priority level, note, delete button, completed button/check box)
+    - [x] footer?
     - [ ]
     - [ ]
     - [ ]
     - [ ]
     - [ ]
-- [ ] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
-- [ ] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
-- [ ] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
-- [ ] Create PUT ROUTE/ ajax for inserting data to SQL database
+- [x] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
+- [x] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
+- [x] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
+- [ ] Create PUT ROUTE/ ajax for changing row data when task is completed
 
 ## STYLING (style.css)
-- [ ] theme of page (paper/ notebook or do I want to explore something different)
-- [ ] background color/ image 
-- [ ] header color/ image
-- [ ] font style for header/ logo
-- [ ] font style for notes
-- [ ] footer for "brand consistency" of page
+- [x] theme of page (paper/ notebook or do I want to explore something different)
+- [x] background color/ image 
+- [x] header color/ image
+- [x] font style for header/ logo
+- [x] font style for notes
+- [x] footer for "brand consistency" of page
 - [ ] table formating (bootstrap)
     -[ ] consider how I want this to appear on page
 
 ## SERVER (server.js/ router.js/ pool.js)
-- [ ] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
-- [ ] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
-- [ ] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
+- [x] Create GET ROUTE/ ajax for table data (append to do list notes to DOM)
+- [x] Create POST ROUTE/ ajax for input data (inputs to add notes to do list array)
+- [x] Create DELETE ROUTE/ ajax for deleting list data from DOM/ database
 - [ ] Create PUT ROUTE/ ajax for inserting data to SQL database
 - [ ]
 - [ ]

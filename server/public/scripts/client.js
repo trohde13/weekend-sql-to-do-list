@@ -9,6 +9,7 @@ function handleReady() {
     //click listeners
     $('#addNote').on('click', postListItems);
     $('#listBody').on('click', '.deleteBtn', deleteItem);
+    $('#listBody').on('click', 'checkBtn', completeItem);
 
 }; //end handleReady
 
@@ -25,6 +26,7 @@ function getListItems() {
             $('#listBody').append(`
             <tr data-id=${response[i].id}>
                 <td><button class="checkBtn">✔️</td>
+                <td>${response[i].completed}</td>
                 <td>${response[i].priority}</td>
                 <td>${response[i].note}</td>
                 <td><button class="deleteBtn">DELETE</td>
@@ -76,7 +78,22 @@ function deleteItem() {
 function completeItem() {
     console.log('completed list item');
     //ajax PUT
+    const id = $(this).closest('tr').data('id');
+    console.log(id);
+    const dataToSend = {
+        completed: true
+    }
 
+    $.ajax({
+        type: 'PUT',
+        url: `/listdata/${id}`,
+        data: dataToSend
+    }).then(function(response) {
+        console.log('task completed');
+        getListItems();
+    }).catch(function(error) {
+        alert('error updating')
+    })
 
 }; //end completeItem
 

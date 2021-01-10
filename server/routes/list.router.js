@@ -35,7 +35,32 @@ router.post('/', (req, res) => {
 
 
 //PUT ROUTE
+router.put('/:id', (req, res) => {
+    let notes = req.body;
+    let id = req.params.id;
 
+    console.log(`Updating TO DO notes ${id} with`, notes.completed);
+
+    let queryText;
+
+    if (notes.completed === 'yes') {
+        queryText = `
+            UPDATE "notes"
+            SET "completed" = '✓'
+            WHERE "id" = $1;`
+    } else {
+        res.sendStatus(400);
+        return;
+    }
+
+    pool.query(queryText, [id])
+        .then((result) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            console.log(error);
+            res.sendStatus(500);
+        })
+})
 
 
 //DELETE ROUTE

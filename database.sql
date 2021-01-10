@@ -1,11 +1,10 @@
 CREATE TABLE "notes" (
 	"id" SERIAL PRIMARY KEY,
+	"completed" BOOLEAN DEFAULT false,
 	"priority" VARCHAR(4) NOT NULL,
 	"note" VARCHAR(140) NOT NULL
 );
 
-INSERT INTO "notes" ("priority", "note")
-VALUES ('high', 'Write code on Client Side');
 
 INSERT INTO "notes" ("priority", "note")
 VALUES ('high', 'Write code on Server Side');

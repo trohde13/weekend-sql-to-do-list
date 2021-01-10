@@ -6,10 +6,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
 
 .pageHeader {
-    padding: 30px;
+    padding: 20px;
     margin: 10px;
     background: #ccffff;
     background-image: url("pencils1.jpg");
@@ -23,40 +24,99 @@ body {
     text-align: right;
     text-shadow: 2px 2px 7px #291528;
     color: #ffffff;
+    line-height: 0.3em;
+}
+
+.pageTitle {
+    font-size: 60px;
+}
+
+.pageSubTitle {
+    font-size: 25px;
 }
 
 #inputDiv {
     padding: 20px;
-    margin: 20px;
-    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     
 }
 
 #priorityIn {
+    width: 100px;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#noteIn {
+    height: 30px;
+    width: 400px;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#addNote {
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#outputDiv {
+    overflow: auto;
+}
+
+.checkBtn {
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.deleteBtn {
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.sectionHeader {
+    height: 85px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 
 .sectionHeader {
-    padding: 5px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 60px;
-    margin-right: 60px;
-    background: #ffffff;
-    background-image: url("notebook-spiral.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 4px 6px #291528;
-}
-
-.sectionHeader {
     text-align: center;
-    font-size: x-large;
+    text-shadow: 2px 2px 7px #291528;
+    color: #050505;
+    font-size: 45px;
+       
 }
 
 #listWrapper {
+    
+    width: 600px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    float: inherit;
+    font-size: 18px;
+    
+}
+
+tr {
+    padding: 20px;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    box-shadow: 0 4px 6px #291528;
+    line-height: 2em;
 }
 
 .pageFooter {
@@ -78,4 +138,9 @@ body {
     text-align: right;
     text-shadow: 2px 2px 7px #291528;
     color: #ffffff;
+}
+
+p {
+    padding: 2px;
+    margin: 2px;
 }
