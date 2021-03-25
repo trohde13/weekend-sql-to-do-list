@@ -16,7 +16,7 @@
 
 ## Screen Shot
 
-    ![to do list](images/todo-list.png)
+ ![to do list](images/todo.png)
 
 
 
