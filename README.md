@@ -56,7 +56,7 @@ JavaScript, jQuery, CSS, HTML, SQL (Postico/ Postgres)
 
 ## Acknowledgement
 
-Thanks to the staff and instructors [Prime Digital Academy](https://www.primeacademy.io) who equipped and helped me make this application a reality. Special thanks to Chris Emerfoll, Collin Radichel, and Mike Dunn for looking through my code, helping me find the problem pieces of code and talked me through methods to fix them.
+Thanks to the staff and instructors at  [Prime Digital Academy](https://www.primeacademy.io) who equipped and helped me make this application a reality. Special thanks to Chris Emerfoll, Collin Radichel, and Mike Dunn for looking through my code, helping me find the problem pieces of code and talked me through methods to fix them.
 
 
 ## Support
