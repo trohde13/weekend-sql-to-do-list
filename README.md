@@ -56,11 +56,11 @@ JavaScript, jQuery, CSS, HTML, SQL (Postico/ Postgres)
 
 ## Acknowledgement
 
-Thanks to Prime Digital Academy who equipped and helped me make this application a reality. Special thanks to Chris Emerfoll, Collin Radichel, and Mike Dunn for looking through my code, helping me find the problem pieces of code and talked me through methods to fix them.
+Thanks to ![Prime Digital Academy](https://www.primeacademy.io) who equipped and helped me make this application a reality. Special thanks to Chris Emerfoll, Collin Radichel, and Mike Dunn for looking through my code, helping me find the problem pieces of code and talked me through methods to fix them.
 
 
 ## Support
 
-If you have suggestions or issues, please email me at trohde@rocketmail.com
+If you have suggestions or issues, please email me at rohde.t@gmail.com
 
 
